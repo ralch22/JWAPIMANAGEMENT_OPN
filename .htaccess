@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /srv/users/serverpilot/apps/onepathnetwork/public/jwapimanagement/.htpasswd
+Require valid-user

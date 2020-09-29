@@ -1,0 +1,96 @@
+ /* css document */
+ 
+ @font-face { src: url('../fonts/MyriadPro-Regular.otf'); font-family:MyriadPro; }
+
+body{background:#ebeff3;}
+
+/* exprt_table */
+thead {
+    background: #3598db;
+    color: #fff;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #ebebeb;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #fff;
+}
+.table td, .table th {
+
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    padding: 15px 10px;
+    text-align: center;
+}
+.table td, .table th {
+    padding: 20px 10px;
+}
+form.search_form .form-group{margin-bottom:20px; display:block;
+width:100%;overflow:hidden;}
+form.search_form label {
+    width: 40%;
+    float: left;
+    display: block;
+}
+form.search_form .form-control {
+    width: 60%;
+    float: left;
+    display: block;
+}
+.form-group.v_s select,
+.form-group.v_s .form-control {
+    width: 126px;
+}
+.switchToggle input[type=checkbox]{height: 0; width: 0; visibility: hidden; position: absolute; }
+.switchToggle label {cursor: pointer; text-indent: -9999px; width: 70px; max-width: 70px; height: 30px; background: #d1d1d1; display: block; border-radius: 4px; position: relative; }
+.switchToggle label:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 32px;
+    height: 30px;
+    background: #fff;
+    border-radius: 3px;
+    transition: 0.3s;
+    border: 1px solid #fff;
+}
+.switchToggle input:checked + label, .switchToggle input:checked + input + label  {background: #3e98d3; }
+.switchToggle input + label:before, .switchToggle input + input + label:before {content: 'OFF'; position: absolute; top: 0px; left: 35px; width: 26px; height: 30px; border-radius: 0px; transition: 0.3s; text-indent: 0; color: #fff; }
+.switchToggle input:checked + label:before, .switchToggle input:checked + input + label:before {content: 'ON'; position: absolute; top: 4px; left: 10px; width: 26px; height: 26px; border-radius: 90px; transition: 0.3s; text-indent: 0; color: #fff; }
+.switchToggle input:checked + label:after, .switchToggle input:checked + input + label:after {left: calc(100%); transform: translateX(-100%); }
+.switchToggle label:active:after {width: 60px; } 
+.toggle-switchArea { margin: 10px 0 10px 0; }
+
+/* Rounded sliders */
+
+
+
+.absolute-no {
+	position: absolute;
+	left: 0;
+	color: darkslategrey;
+	text-align: right !important;
+    font-size: 13px;
+    width: calc(100% - 25px);
+    height: 30px;
+    line-height: 30px;
+      cursor: pointer;
+}
+ 
+ /* bottom buttons  */
+ a.btn.print_v{float:left; margin-right:22px;}
+ a.btn.print_v , a.btn.update_v  {
+    background: #3598db;
+    color: #fff;
+    width: 130px;
+    height: 38px;
+	display:block;
+	overflow:hidden;
+
+}
+ 
+@media (max-width: 1024px)	{
+
+}
